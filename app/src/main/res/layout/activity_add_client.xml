@@ -1,0 +1,112 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ajouter un client"
+            android:layout_marginTop="160dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/test2"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scanPassportButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logout"
+            android:textColor="#FFFFFF"
+            android:text="Scan Passport"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/passportImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/clientFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_border_white"
+            android:hint="Nom" />
+
+        <EditText
+            android:id="@+id/clientLastName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_border_white"
+            android:hint="Prenom" />
+
+        <EditText
+            android:id="@+id/clientSex"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_border_white"
+            android:hint="Sexe" />
+
+        <EditText
+            android:id="@+id/clientPassport"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_border_white"
+            android:hint="Numero Passport" />
+
+        <EditText
+            android:id="@+id/clientBirth"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_border_white"
+            android:hint="Date de naissance" />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_border_white"
+            android:layout_marginBottom="16dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ScanImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan Image"
+            android:background="@drawable/logout"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/clientImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addClientButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Client"
+            android:background="@drawable/logout"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

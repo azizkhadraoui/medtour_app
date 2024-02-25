@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7008508086",
+    "project_id": "medtour-test",
+    "storage_bucket": "medtour-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7008508086:android:4b3338f4b13dfd3a626e17",
+        "android_client_info": {
+          "package_name": "com.omnilink.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7008508086-hgk0haol3paon06rirgqnefdagj0s7ph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPoJe90baJsj2mB3CVEnTHvBiIZoSDB4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7008508086-hgk0haol3paon06rirgqnefdagj0s7ph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
