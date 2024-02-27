@@ -11,24 +11,27 @@
         android:padding="16dp">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ajouter un client"
-            android:layout_marginTop="160dp"
-            android:textColor="#FFFFFF"
             android:id="@+id/test2"
-            android:textSize="35sp"
-            android:textStyle="bold"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="16dp"
+            android:text="Ajouter un Client"
+            android:fontFamily="@font/GEO_AI__"
+            android:textColor="#000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/scanPassportButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="500px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
             android:background="@drawable/logout"
             android:textColor="#FFFFFF"
             android:text="Scan Passport"
+            android:fontFamily="@font/GEO_AI__"
             android:layout_marginBottom="16dp"/>
 
 
@@ -36,79 +39,104 @@
             android:id="@+id/passportImageView"
             android:layout_width="200dp"
             android:layout_height="150dp"
-            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+
             android:background="@drawable/round_border_white"
-            android:src="@drawable/plus.png" />
+            android:scaleType="centerInside"
+            android:src="@drawable/plus" />
 
         <EditText
             android:id="@+id/clientFirstName"
-            android:layout_width="match_parent"
+            android:layout_width="344dp"
             android:layout_height="40dp"
             android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+
             android:background="@drawable/round_border_white"
             android:hint="Nom" />
 
         <EditText
             android:id="@+id/clientLastName"
-            android:layout_width="match_parent"
+            android:layout_width="344dp"
             android:layout_height="40dp"
             android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+
             android:background="@drawable/round_border_white"
             android:hint="Prenom" />
 
         <EditText
             android:id="@+id/clientSex"
-            android:layout_width="match_parent"
+            android:layout_width="344dp"
             android:layout_height="40dp"
             android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+
             android:background="@drawable/round_border_white"
             android:hint="Sexe" />
 
         <EditText
             android:id="@+id/clientPassport"
-            android:layout_width="match_parent"
+            android:layout_width="344dp"
             android:layout_height="40dp"
             android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+
             android:background="@drawable/round_border_white"
             android:hint="Numero Passport" />
 
         <EditText
             android:id="@+id/clientBirth"
-            android:layout_width="match_parent"
+            android:layout_width="344dp"
             android:layout_height="40dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/round_border_white"
+            android:layout_gravity="center"
+
             android:hint="Date de naissance" />
+
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_border_white"
-            android:layout_marginBottom="16dp" />
+            android:layout_width="344dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/round_border_white" />
 
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ScanImageButton"
-            android:layout_width="match_parent"
+            android:layout_width="276dp"
             android:layout_height="wrap_content"
-            android:text="Scan Image"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/logout"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="16dp"/>
+            android:text="Scan Image"
+            android:layout_gravity="center"
+            android:fontFamily="@font/GEO_AI__"
+
+            android:textColor="#FFFFFF" />
 
         <ImageView
             android:id="@+id/clientImageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:scaleType="fitCenter" />
+            android:background="@drawable/round_border_white"
+            android:scaleType="centerInside"
+            android:src="@drawable/plus" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/addClientButton"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Add Client"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="right"
             android:background="@drawable/logout"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="16dp"/>
+            android:text="Add Client"
+            android:fontFamily="@font/GEO_AI__"
+
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </ScrollView>

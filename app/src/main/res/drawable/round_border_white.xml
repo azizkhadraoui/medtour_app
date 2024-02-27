@@ -2,4 +2,9 @@
     <solid android:color="#80FFFFFF" /> <!-- Semi-transparent white background -->
     <corners android:radius="10dp" /> <!-- Border radius -->
     <stroke android:color="#000000" android:width="1dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/plus.png" />
 </shape>
