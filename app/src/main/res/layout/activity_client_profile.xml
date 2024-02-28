@@ -5,15 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="160dp"
+    android:paddingTop="90dp"
     android:background="@drawable/background2">
 
     <!-- User Image -->
+
     <ImageView
         android:id="@+id/user_image"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:layout_marginBottom="20px"
+        android:adjustViewBounds="true"
+        android:background="@drawable/round_border_white"
+        android:scaleType="centerInside"
+        android:src="@drawable/plus" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -21,60 +27,67 @@
         android:layout_margin="8dp"
         app:cardCornerRadius="8dp"
         android:background="#80000000">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="8dp">
+            android:padding="10dp">
+
             <TextView
                 android:id="@+id/user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/GEO_AI__"
                 android:text="John Doe"
-                android:textSize="24sp"
-                android:layout_marginTop="8dp"/>
-        <TextView
-        android:id="@+id/passport_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Passport: ABC123"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"/>
+                android:textColor="#000"
+                android:textSize="35sp" />
 
-    <TextView
-        android:id="@+id/flight_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Flight: AC123"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/passport_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Passport: ABC123"
+                android:textSize="18sp" />
 
-    <!-- Payment Details -->
-    <TextView
-        android:id="@+id/payment_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Paid: $500"
-        android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/flight_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Flight: AC123"
+                android:textSize="18sp" />
 
-    <!-- Companion Details -->
-    <TextView
-        android:id="@+id/companion_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="With: Jane Doe"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"/>
+            <!-- Payment Details -->
+            <TextView
+                android:id="@+id/payment_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Paid: $500"
+                android:textSize="18sp" />
 
-    <!--
+            <!-- Companion Details -->
+            <TextView
+                android:id="@+id/companion_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="With: Jane Doe"
+                android:textSize="18sp" />
+
+
     <TextView
         android:id="@+id/medical_conditions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Medical Conditions: None"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>-->
+        android:layout_marginTop="16dp"/>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>
