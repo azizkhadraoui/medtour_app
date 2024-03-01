@@ -12,41 +12,45 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="160dp"
-        android:text="choisir type de chambre"
-        android:textSize="24sp"
+        android:text="Choisir le Type de Chambre"
+        android:textColor="#000"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"/>
+        android:fontFamily="@font/GEO_AI__"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/singleButton"
-        android:layout_marginTop="25dp"
-        android:layout_width="match_parent"
+        android:id="@+id/singleButton"
+        android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="25dp"
         android:background="@drawable/logout"
-        android:textColor="#FFFFFF"
         android:text="Single"
- />
+        android:textColor="#000"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/doubleButton"
-        android:layout_marginTop="25dp"
-        android:layout_width="match_parent"
+        android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="25dp"
         android:background="@drawable/logout"
         android:text="Double"
-        android:textColor="#FFFFFF" />
+        android:textColor="#000"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/familyButton"
-        android:layout_width="match_parent"
-        android:layout_marginTop="25dp"
+        android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="25dp"
         android:background="@drawable/logout"
         android:text="Family of 3"
-        android:textColor="#FFFFFF" />
+        android:textColor="#000"
+        />
 
 
 

@@ -4,128 +4,133 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background2">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingTop="170dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="information de voyage"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginBottom="16dp"/>
-
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="8dp"
-        android:background="#80000000">
+        android:orientation="vertical"
+        android:paddingTop="170dp">
 
-        <!-- Add a LinearLayout inside the CardView -->
-        <LinearLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/GEO_AI__"
+            android:gravity="center"
+            android:text="Information de Voyage"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="8dp"> <!-- Added padding here -->
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="30dp"
+            android:background="#80000000">
 
-            <TextView
-                android:id="@+id/flightTypeTextView"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Flight Type: International"
-                android:textSize="18sp"
-                android:textColor="@color/black" />
+                android:orientation="vertical"
+                android:padding="8dp">
 
-            <TextView
-                android:id="@+id/flightDateTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Flight Date: 2023-09-15"
-                android:textSize="18sp"
-                android:textColor="@color/black"
-                android:layout_marginTop="8dp" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/flightTypeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/GEO_AI__"
+                    android:text="Flight Type: International"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
 
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/GEO_AI__"
+                    android:text="Flight Date: 2023-09-15"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        android:layout_marginVertical="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="@color/black" />
 
-    <TextView
-        android:id="@+id/groupInfoTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="information de groups"
-        android:textSize="28sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/groupInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information de Groups:"
+            android:textSize="28sp"
+            android:fontFamily="@font/GEO_AI__"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
-    <!-- RecyclerView for Group Members -->
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
-        android:background="#80000000"
-        android:layout_margin="8dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/groupMembersRecyclerView"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"/>
+            app:cardCornerRadius="8dp"
+            android:background="#80000000"
+            android:layout_margin="8dp">
 
-    </androidx.cardview.widget.CardView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/groupMembersRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        android:layout_marginVertical="16dp"/>
+        </androidx.cardview.widget.CardView>
 
-    <!-- Total Cost -->
-    <TextView
-        android:id="@+id/totalCostTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Prix Totale: 1000 TND"
-        android:textSize="25sp"
-        android:textColor="@color/white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginVertical="16dp"/>
 
-    <!-- Initial Payment EditText -->
-    <EditText
-        android:id="@+id/initialPaymentEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:hint="Payment initial"
-        android:textSize="23sp"
-        android:textColor="@color/black"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:background="#FFFFFF"/>
+        <TextView
+            android:id="@+id/totalCostTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix Totale: 1000 TND"
+            android:textSize="25sp"
+            android:fontFamily="@font/GEO_AI__"
+            android:textColor="@color/black" />
 
-    <!-- Add Payment Button -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/addPaymentButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ajouter le payment"
-        android:textSize="18sp"
-        android:background="#FF7A00"
-        android:textColor="#FFFFFF"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"/>
+        <EditText
+            android:id="@+id/initialPaymentEditText"
+            android:layout_width="303dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_border_white"
+            android:hint="Payment initial"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
 
-</LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addPaymentButton"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/logout"
+            android:text="Ajouter le Payment"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
 </ScrollView>
